@@ -1,9 +1,79 @@
-<!doctype html>
-
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-<h1>Services</h1>
+<title>New document</title>
+<style type="text/css">
+body {
+	margin: 0;
+	padding: 0;
+	font: 12px/1.5 verdana, arial, helvetica, sans-serif;
+	text-align: center;
+	background-image: url(grid.gif);
+}
+#content {
+	position:relative;
+	margin:auto;
+	text-align:left;
+	width:200px;
+	height:150px;
+	background-color:#fc0;
+	padding-top:40px;
+}
+h1 {
+	font-size: 12px;
+	line-height: 1.5em;
+}
+</style>
 </head>
+<body>
 
+
+<div id="content">
+	<h1>To enter this site you must be 18 yrs old or older</h1>
+	<button type="button" onclick="window.location.href = 'http://www.vegavape.com/';">I am 18+</button>
+	<button type="button" onclick="window.location.href = 'https://www.google.com/';">I am not close to being 18</button>
+</div>
+
+<script>
+function getWindowHeight() {
+	var windowHeight = 0;
+	if (typeof(window.innerHeight) == 'number') {
+		windowHeight = window.innerHeight;
+	}
+	else {
+		if (document.documentElement && document.documentElement.clientHeight) {
+			windowHeight = document.documentElement.clientHeight;
+		}
+		else {
+			if (document.body && document.body.clientHeight) {
+				windowHeight = document.body.clientHeight;
+			}
+		}
+	}
+	return windowHeight;
+}
+function setContent() {
+	if (document.getElementById) {
+		var windowHeight = getWindowHeight();
+		if (windowHeight > 0) {
+			var contentElement = document.getElementById('content');
+			var contentHeight = contentElement.offsetHeight;
+			if (windowHeight - contentHeight > 0) {
+				contentElement.style.position = 'relative';
+				contentElement.style.top = ((windowHeight / 2) - (contentHeight / 2)) + 'px';
+			}
+			else {
+				contentElement.style.position = 'static';
+			}
+		}
+	}
+}
+window.onload = function() {
+	setContent();
+}
+window.onresize = function() {
+	setContent();
+}
+</script>
+</body>
 </html>
