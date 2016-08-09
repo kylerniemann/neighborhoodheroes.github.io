@@ -89,7 +89,54 @@ form {
 
 </head>
 <body>
-  
+  <style>
+  @media only screen and (max-width: 768px){
+<a class=”back-to-top” style=”display: inline;” href=”#”>Back to Top</a>
+
+
+
+</style>
+
+<script>
+  <script>
+ 
+jQuery(document).ready(function() {
+ 
+var offset = 250;
+ 
+var duration = 300;
+ 
+jQuery(window).scroll(function() {
+ 
+if (jQuery(this).scrollTop() > offset) {
+ 
+jQuery(‘.back-to-top’).fadeIn(duration);
+ 
+} else {
+ 
+jQuery(‘.back-to-top’).fadeOut(duration);
+ 
+}
+ 
+});
+ 
+&nbsp;
+ 
+jQuery(‘.back-to-top’).click(function(event) {
+ 
+event.preventDefault();
+ 
+jQuery(‘html, body’).animate({scrollTop: 0}, duration);
+ 
+return false;
+ 
+})
+ 
+});
+ 
+</script>
+</script>
+
 </body>
 
 
