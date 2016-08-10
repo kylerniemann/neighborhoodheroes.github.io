@@ -2,48 +2,51 @@
 <html>
   
 <head>
+  <!--> Pulls text font 'nunito' <-->
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
   
   <style type="text/css">
-    
+  /* Style column */
   .column {
      width:800px;
      float:left
 }
 
-input[type=submit]{
+  /* Style submit button */
+  input[type=submit]{
     font-family: Nunito
 }
-
-h1 {
-  font-family: Nunito
+ /* Style heading */
+  h1 {
+    font-family: Nunito
 }
-
-p {
-  font-family: Nunito
+  /* Style paragraph */
+  p {
+    font-family: Nunito
 }
-
-.bottom {
+  /* Style bottom location for div, etc. */
+  .bottom {
     position:fixed;
     bottom:10px;
     right:3px;
     height:20px;
 }
-
-form {
+  /* Style form button */
+  form {
     display: inline;
 }
-  </style>
+</style>
 
+<!--> 'Home' button links user to home page <-->
 <FORM METHOD="LINK" ACTION="index.html">
 <INPUT TYPE="submit" VALUE="Home">
 </FORM>
-
+<!--> 'Contact Us' button links user to Google form page <-->
 <FORM METHOD="LINK" ACTION="https://docs.google.com/forms/d/e/1FAIpQLSe9Xqk-ExHwdLKs3i-yvupy7jvh1WJhPk12mQerYYJdynyWzw/viewform">
 <INPUT TYPE="submit" VALUE="Contact Us">
 </FORM>
-  
-  <title>Neighborhood Heroes</title>
+<!--> Title of site that appears in browser <-->
+<title>Neighborhood Heroes</title>
   
   <h1 align="center" style="font-size: 100px">
     Neighborhood Heroes
@@ -51,9 +54,8 @@ form {
   <hr>
   
   <h1 align="left" style="font-size:60px">Our Team</h1>
-  
+  <!--> Sections off a piece of the html <-->
   <div class="column">
-    
     <p style="font-size:30px">A group of young minds have joined together to create an organized community designed to serve our neighboring families with efficiency and satisfaction. Your local college students are here to provide you with any required services that you may need in the San Mateo and/or other nearby counties.</p>
   </div>
 
