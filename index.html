@@ -11,7 +11,7 @@
   // Fade out animation on 'Yes' button click (DOES NOT WORK YET)
 $(document).ready(function(){
     $(".fadeButton").click(function(){
-        $("html").fadeOut("slow", window.location.href = "home.html");
+        $("fadeButton").fadeOut("slow", window.location.href = "home.html");
     });
 });
 </script>
@@ -45,7 +45,7 @@ $(document).ready(function(){
     }
 }
 button{
-  font-family: Nunito;
+  font-family: "Arial Black", Gadget, sans-serif;
     width: 320px;
     height: 160px;
   font-size: 100px;
@@ -58,7 +58,7 @@ input[type=submit]{
 }
 
 h1 {
-  font-family: Nunito
+  font-family: "Arial Black", Gadget, sans-serif
 }
 
 p {
@@ -75,6 +75,47 @@ p {
 form {
     display: inline;
 }
+
+.fadeButton:hover {
+    color: green;
+}
+
+.secureSite{
+    font-family: Nunito
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    background-color: #0099ff;
+    margin: 0 0 100px;
+    /* bottom = footer height */
+    padding: 25px;
+}
+footer {
+    background-color: green;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    overflow:hidden;
+}
+
+div {
+    color: white;
+}
+
+a {
+color: yellow;
+}
+
+a:visited {
+color: orange;
+}
+
   </style>
 
   
@@ -94,7 +135,13 @@ form {
 <button class="fadeButton" align="center">
 <onclick="home.html">Yes</a></button>
 </button>
+
+<footer>
+<div class= "secureSite" align ="right">
+Our Site is SAFE! Check our website URL <a href = "https://www.virustotal.com/en/">here</a> 
 </div>
+</footer>
+
 
 </head>
 <body>
