@@ -11,27 +11,25 @@
 
   <!-- Indicates that this is text/css styling -->
   <style type="text/css">
-  
-        [class*="col-"] {
-        width: 100%;
+    
+    @media only screen and (min-width: 768px) {
+    [class*="fadeButton"] {
+      width: 25%;
     }
-    
-  .column {
-     width:800px;
-     float:left
-}
-    
-     @media only screen and (max-width: 768px) {
+
+    [class*="title"] {
+    padding-top: 170px;
+    }
+
+    }
+
+    @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
+
+    [class*="title"] {
+    font-size: 25vw;
     }
-    
-    h1{
-      font-family: Nunito;
-      font-size: 40px;
-    }
-    
+
     div{
       width: 100%;
     }
@@ -40,6 +38,7 @@
       width: 100%;
     }
 }
+
 button{
     font-family: Nunito;
     background-color: red;
@@ -50,33 +49,27 @@ button{
     text-decoration: none;
     display: inline-block;
     font-size: 30px;
+    width: 100%;
 }
+
 input[type=submit]{
     font-family: Nunito;
     width: 320px;
     height: 160px;
 }
-h1 {
-  font-family: Nunito;
-}
+
 p {
   font-family: Nunito
 }
-.bottom {
-    position:fixed;
-    bottom:10px;
-    right:3px;
-    height:20px;
-}
+
 form {
     display: inline;
 }
+
 .fadeButton:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-.secureSite{
-    font-family: Nunito
-}
+
 html {
     position: relative;
     min-height: 100%;
@@ -87,38 +80,23 @@ body {
     /* bottom = footer height */
     padding: 25px;
 }
-footer {
-    background-color: green;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 20px;
-    width: 100%;
-    overflow:hidden;
-}
+
 div {
     color: white;
     font-size: 100%;
 }
-a {
-color: yellow;
-}
-a:visited {
-color: orange;
-}
-#section1 {
-    height: 90%; 
-    width:100%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+
+.title {
+    font-size: 80px;
+    color: white;
+    font-family: Nunito;
 }
 </style>
 
   
 <title>Neighborhood Heroes</title>
 
-<h1 align="center" style= "color:white;">Neighborhood Heroes</h1>
+<h1 class="title" align="center">Neighborhood Heroes</h1>
 
 <p align = "center" style= "color:white; font-size: 30px">
 Giving people the free time they deserve.
@@ -133,4 +111,3 @@ Giving people the free time they deserve.
 
 </head>
 </html>
-
