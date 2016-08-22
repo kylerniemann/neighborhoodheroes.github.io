@@ -5,19 +5,10 @@
   <!-- Allows site to be viewed correctly on mobile device (iPhone) --> 
   <meta name="viewport" content="initial-scale=1.0">
   
-  <!-- Pulls JQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>
-  // Fade out animation on 'Yes' button click (DOES NOT WORK YET)
-$(document).ready(function(){
-    $(".fadeButton").click(function(){
-        $("fadeButton").fadeOut("slow", window.location.href = "home.html");
-    });
-});
-</script>
   <!-- Pulls 'Nunito' font -->
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Holtwood+One+SC" />
+
   <!-- Indicates that this is text/css styling -->
   <style type="text/css">
   
@@ -122,15 +113,12 @@ color: orange;
     align-items: center;
     justify-content: center;
 }
-  </style>
+</style>
 
   
-  <title>Neighborhood Heroes</title>
-  
-  
-<div class="section" id="section1">
+<title>Neighborhood Heroes</title>
+
 <h1 align="center" style= "color:white;">Neighborhood Heroes</h1>
-</div>
 
 <p align = "center" style= "color:white; font-size: 30px">
 Giving people the free time they deserve.
@@ -144,46 +132,5 @@ Giving people the free time they deserve.
 </button>
 
 </head>
-<body>
-  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>
- 
- 
-jQuery(document).ready(function() {
- 
-var offset = 250;
- 
-var duration = 300;
- 
-jQuery(window).scroll(function() {
- 
-if (jQuery(this).scrollTop() > offset) {
- 
-jQuery(‘.back-to-top’).fadeIn(duration);
- 
-} else {
- 
-jQuery(‘.back-to-top’).fadeOut(duration);
- 
-}
- 
-});
- 
-&nbsp;
- 
-jQuery(‘.back-to-top’).click(function(event) {
- 
-event.preventDefault();
- 
-jQuery(‘html, body’).animate({scrollTop: 0}, duration);
- 
-return false;
- 
-})
- 
-});
- 
-</script>
-</body>
 </html>
+
