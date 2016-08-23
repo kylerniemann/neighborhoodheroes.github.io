@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html{
+  background: #669999;
+}
+
+h1{
+  padding-top: 100px;
+  letter-spacing: 25px;
+  text-transform: uppercase;
+  font-size: 3vw;
+  text-align: center;
+  font-family: Nunito;
+  color: white;
+}
+
+p{
+  text-align: center;
+  font-size: 2vw;
+  font-family: Nunito;
+  color: white;
+}
+
+div{
+  text-align: center;
+}
+
+.b{
+  font-size: 2vw;
+  font-family: Nunito;
+  color: white;
+  background: #66c2ff;
+  width: 10em;
+}
+
+.b:hover{
+  background: black;
+}
+
+</style>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
+
+<div class="buttonRow">
+<button class="b">
+Home
+</button>
+
+<button class="b">
+About
+</button>
+
+<button class="b">
+Services
+</button>
+
+<button class="b">
+Contact
+</button>
+</div>
+</head>
+
+<h1>Neighborhood Heroes</h1>
+
+<body>
+
+<p>Giving people the free time they deserve.</p>
+
+<div class="homeB">
+
+<button class="b">
+Request A Service
+</button>
+
+</div>
+
+</body>
+</html>
