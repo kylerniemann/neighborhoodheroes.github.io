@@ -3,7 +3,7 @@
 <head>
 <style>
 html{
-  background: url(http://mms.businesswire.com/media/20140414006112/en/411498/5/CenturyCentreI&II_aerial.jpg);
+  background-image: url("http://mms.businesswire.com/media/20140414006112/en/411498/5/CenturyCentreI&II_aerial.jpg");
 }
 h1{
   padding-top: 5vh;
